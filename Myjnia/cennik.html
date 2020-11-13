@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Oliwier Gębczyński">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Myjnia</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Myjnia ręczna <span>Błysk</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cennik.html">Cennik</a></li>
+            </ul>
+        </header>
+        <main>
+            <h2>Oblicz koszt usługi</h2>
+            <form action="#">
+                <label for="name">Podaj imię: <input type="text" id="name" required></label>
+                <fieldset>
+                    <legend>Usługa</legend>
+                    <label>Mycie zewnętrzne 30zł
+                        <input type="checkbox" name="input" disabled checked>
+                    </label>
+                    <label>Suszenie 10zł
+                        <input type="checkbox" name="input">
+                    </label>
+                    <label>Woskowanie 15zł
+                        <input type="checkbox" name="input">
+                    </label>
+                    <label>Odkurzanie 10zł
+                        <input type="checkbox" name="input">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rodzaj pojazdu</legend>
+                    <select>
+                        <option>Mały</option>
+                        <option>Średni (+10%)</option>
+                        <option>Van (+20%)</option>
+                        <option>Bus (+45%)</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Karta stałego klienta</legend>
+                    <label>Brak<input type="radio" name="karta"></label>
+                    <label>Srebrna (-5%)<input type="radio" name="karta"></label>
+                    <label>Złota (-15%)<input type="radio" name="karta"></label>
+                </fieldset>
+                <input type="reset" value="Wyczyść">
+                <input type="submit" value="Oblicz">
+            </form>
+            <img src="hand_m.jpg" alt="mycie ręczne">
+            <p>Koszt usługi:</p>
+        </main>
+        <aside>
+            <h3>Rezerwacja na godzinę</h3>
+            <p>Rezerwacja na godzinę - rezerwuj termin mycia samochodu. Masz mało czasu? Nie lubisz czekać? Zarezerwuj
+                mycie pojazdu na konkretną godzinę</p>
+        </aside>
+        <footer>
+            <p><span>Oliwier Gębczyński</span> 3i</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
