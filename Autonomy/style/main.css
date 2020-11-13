@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.container header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #180e0c;
+}
+
+.container header h1 {
+  width: auto;
+  height: auto;
+  color: white;
+}
+
+.container header nav {
+  width: 35%;
+}
+
+.container header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+}
+
+.container header nav ul li {
+  padding: 1em;
+  border-radius: 7px;
+  transition: ease-in-out .3s;
+}
+
+.container header nav ul li:hover {
+  background-color: #55c9d6;
+}
+
+.container main {
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr 1fr 200px;
+  grid-template-rows: 1fr 1fr;
+}
+
+.container main figure {
+  width: 100%;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+
+.container main figure img {
+  width: 100%;
+}
+
+.container main .first-article {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.container main .second-article {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.container main .third-article {
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+.container main .fourth-article {
+  grid-row: 2/3;
+  grid-column: 5/6;
+}
+
+.container main .first-article, .container main .second-article, .container main .third-article, .container main .fourth-article {
+  width: 100%;
+  height: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container main .first-article h2, .container main .second-article h2, .container main .third-article h2, .container main .fourth-article h2 {
+  width: 75%;
+  text-align: left;
+}
+
+.container main .first-article p, .container main .second-article p, .container main .third-article p, .container main .fourth-article p {
+  width: 75%;
+  text-align: justify;
+}
+
+.container .gallery {
+  width: 100%;
+  height: 800px;
+  background-color: #37201a;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr 1fr 200px;
+  grid-template-rows: 1fr;
+  column-gap: 1.5rem;
+}
+
+.container .gallery .short-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 70%;
+}
+
+.container .gallery .short-gallery h3 {
+  color: #bb7261;
+  font-size: 30px;
+}
+
+.container .gallery .short-gallery article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10%;
+  color: #83543a;
+}
+
+.container .gallery .short-gallery article img {
+  width: 30%;
+}
+
+.container .gallery .short-gallery article p {
+  width: 50%;
+  line-height: 1.5rem;
+}
+
+.container .gallery #short-gallery-1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.container .gallery #short-gallery-2 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  align-self: center;
+}
+
+.container .gallery .long-gallery {
+  grid-row: 1/2;
+  grid-column: 4/6;
+  height: 70%;
+  align-self: center;
+}
+
+.container .gallery .long-gallery h3 {
+  color: #bb7261;
+  font-size: 30px;
+}
+
+.container .gallery .long-gallery article {
+  color: #83543a;
+  margin-top: 9%;
+}
+
+.container .gallery .long-gallery article p {
+  line-height: 1.5rem;
+}
+
+.container .gallery .long-gallery article img {
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.container .info {
+  width: 100%;
+  height: 700px;
+  background-color: #251611;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .info main {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container .info main h3 {
+  font-size: 35px;
+  padding-left: 10%;
+  padding-bottom: 3%;
+  color: #bf7667;
+}
+
+.container .info main pre {
+  font-size: 20px;
+  color: #6d3a1f;
+}
+
+.container .info aside {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+.container .info aside h3 {
+  font-size: 35px;
+  color: #bf7667;
+  margin-bottom: 4%;
+}
+
+.container .info aside ul {
+  list-style: none;
+}
+
+.container .info aside ul li {
+  margin-bottom: 5%;
+}
+
+.container .info aside ul li a {
+  font-size: 20px;
+  color: #6d3a1f;
+  text-decoration: underline;
+}
+
+.container footer {
+  width: 100%;
+  height: 100px;
+  background-color: #180e0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container footer p {
+  font-size: 20px;
+  color: #5f2412;
+}
