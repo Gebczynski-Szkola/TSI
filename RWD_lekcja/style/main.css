@@ -71,3 +71,54 @@
 .container footer p {
   text-align: center;
 }
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container header h1 {
+    font-size: 4vw;
+  }
+  .container main, .container aside {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container main article, .container aside article {
+    width: 49%;
+    margin: 1vh 0 1vh 0;
+    padding: 3.5vw;
+  }
+  .container main article h2, .container main article h3, .container aside article h2, .container aside article h3 {
+    font-size: 3vw;
+  }
+  .container main article p, .container aside article p {
+    font-size: 1.5vw;
+    line-height: 4vh;
+  }
+  .container main article:nth-of-type(n + 5), .container aside article:nth-of-type(n + 5) {
+    display: block;
+  }
+  .container aside {
+    margin-top: 7vh;
+  }
+  .container aside article:nth-of-type(n + 3) {
+    display: block;
+  }
+  .container aside article {
+    height: 30%;
+  }
+  .container main {
+    margin-bottom: 1vh;
+  }
+  .container main article {
+    height: 25%;
+  }
+  .container footer p {
+    font-size: 1.5vw;
+  }
+}
