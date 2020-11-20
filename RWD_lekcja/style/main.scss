@@ -22,5 +22,28 @@ body * {
             text-align: center;
         }
     }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        article{
+            padding: 1vw;
+            margin: 1vh 0 1vh 0;
+
+            h2{
+                font-size: 4.5vw;
+                margin: .5vh 0 .5vh 0;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 3.5vw;
+                font-weight: 200;
+                color: black;
+            }
+        }
+    }
 }
 
