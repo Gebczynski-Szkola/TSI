@@ -4,3 +4,69 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+//do 640px
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10fr;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "aside"
+    "main"
+    "main"
+    "main"
+    "main"
+    "sidebar"
+    "advert"
+    "footer";
+    row-gap: 2vh;
+    background-color: rgb(158, 162, 148);
+
+    header, aside, main, .advertising, .sidebar, footer{
+        padding: 3vw;
+        color: blue;
+        border: 1px solid red;
+        border-radius: 10px;
+        height: auto;
+        background-color: rgb(250, 255, 151);
+    }
+    
+    
+    header{
+        grid-area: header;
+    }
+
+    aside{
+        grid-area: aside;
+
+        ul{
+            list-style: none;
+        }
+    }
+
+    main{
+        grid-area: main;
+        padding: 8vh 3vw 8vh 3vw;
+
+        h2{
+            margin-bottom: 5vh;
+        }
+    }
+
+    .sidebar{
+        grid-area: sidebar;
+    }
+
+    .advertising{
+        grid-area: advert;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    
+}
+
