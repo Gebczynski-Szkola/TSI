@@ -57,7 +57,7 @@
   grid-area: footer;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 1024px) {
   .container {
     grid-template-columns: 3fr;
     grid-template-rows: 6fr;
@@ -68,5 +68,18 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 4fr;
+    grid-template-areas: "header header header " "aside main sidebar" "aside main advert" "footer footer footer";
+    column-gap: 2vh;
+  }
+  .container header, .container aside, .container main, .container .advertising, .container .sidebar, .container footer {
+    color: red;
+    padding: 2vw;
   }
 }
