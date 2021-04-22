@@ -21,6 +21,10 @@ img:hover {
     border: solid 1px steelblue;
 }
 
+label {
+    display: block;
+}
+
 .header {
     height: 400px;
     width: 70%;

@@ -4,7 +4,7 @@ btn.addEventListener("click", function(){
     const radioInputs = document.querySelectorAll(".input");
     let checkNumber = 0; 
 
-    radioInputs.forEach((input) =>{
+    radioInputs.forEach(function(input){
         checkNumber++
 
         if(input.checked){
